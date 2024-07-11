@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Comments from "./Comments";
 
 const Post = () => {
   return (
@@ -67,7 +68,7 @@ const Post = () => {
             />
             <span className="text-gray-300">|</span>
             <span className="text-gray-500">
-              123<span className="hidden md:inline"> Likes</span>
+              123<span className="hidden md:inline"> Comments</span>
             </span>
           </div>
         </div>
@@ -82,11 +83,12 @@ const Post = () => {
             />
             <span className="text-gray-300">|</span>
             <span className="text-gray-500">
-              123<span className="hidden md:inline"> Likes</span>
+              123<span className="hidden md:inline"> Shares</span>
             </span>
           </div>
         </div>
       </div>
+      <Comments />
     </div>
   );
 };
